@@ -1,0 +1,137 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 0;
+}
+
+/* Hero Section */
+#hero {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+}
+#hero img {
+  max-width: 300px;
+  margin: 20px auto;
+}
+.cta-button {
+  display: inline-block;
+  background-color: #00bcd4;
+  color: #fff;
+  padding: 12px 24px;
+  margin-top: 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.cta-button.secondary {
+  background-color: #555;
+  margin-left: 10px;
+}
+
+/* Section Headings */
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Features Grid */
+.features {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.feature {
+  flex: 1;
+  min-width: 250px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.feature img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+/* Product Features List */
+#features ul {
+  list-style: none;
+  padding-left: 0;
+}
+#features li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+#features li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #00bcd4;
+}
+
+/* App Section */
+#app img {
+  max-width: 300px;
+  display: block;
+  margin: 20px auto;
+}
+
+/* Timeline */
+.timeline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.moment {
+  flex: 1;
+  min-width: 200px;
+  background: #e3f2fd;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Pricing Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+th, td {
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+th {
+  background-color: #00bcd4;
+  color: #fff;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+}
